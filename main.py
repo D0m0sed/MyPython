@@ -1,9 +1,6 @@
-print("Hello, CHel!")
-print("Buy!")
-
-import platform
-import sys
-
-info = 'OS info is \n {}\n\n python version is {} {}'.format(platform.uname(),  sys.version, platform.architecture())
-
-print(info)
+for n in range (1, 20):
+    if n == 5:
+        continue
+    if n == 12:
+        break
+    print(n)

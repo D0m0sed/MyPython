@@ -1,10 +1,10 @@
 import random
+import abc
+import numpy
+
 
 import simple_draw as sd
 sd.resolution = (1200, 600)
-
-
-
 
 def bubble(point, step):
     radius = 50

@@ -1,6 +1,6 @@
 import random
-import abc
-import numpy
+#import abc
+#import numpy
 
 
 import simple_draw as sd

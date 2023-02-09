@@ -1,8 +1,9 @@
 import simple_draw as sd
 sd.resolution = (600, 600)
+sd.caption = 'My Rectangle'
 sd.background_color = (0, 0, 0)
-sd.color = (255, 0, 0)
-alpha =0.1
+alpha = 0.1
+
 
 def fractal_rectangle(A, B, C, D, deep=10):
     if deep < 1:
@@ -15,6 +16,7 @@ def fractal_rectangle(A, B, C, D, deep=10):
     D1 = (D[0] * (1 - alpha) + A[0] * alpha, D[1] * (1 - alpha) + A[1] * alpha)
     fractal_rectangle(A1, B1, C1, D1, deep-1)
 
-fractal_rectangle((100, 100), (500, 100), (500, 500), (100,500), 100)
+
+fractal_rectangle((100, 100), (500, 100), (500, 500), (100, 500), 100)
 
 sd.pause()
